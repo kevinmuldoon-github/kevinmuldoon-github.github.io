@@ -63,14 +63,20 @@ const [blogRSSFeed, setBlogRSSFeed] = useState([]);
     return (
         <>
         <SocialContext.Provider value={{socialMedia}}>
-            <p>This will be the main container</p>
-            <p>About Me</p>
-            <p>What I Do</p>
-            <p>Blog</p>
-            <p>YouTube</p>
-            <p></p>
-            <SocialMediaBox />
-            <Footer />
+        <Header />
+        <div id="main-container">
+            <div><SocialMediaBox /></div>
+            <div id="main-content-area">
+                <p>This will be the main container</p>
+                <p>About Me</p>
+                <p>What I Do</p>
+                <p>Blog</p>
+                <p>YouTube</p>
+                <p></p>
+            </div>
+
+        </div>
+        <Footer />
         </SocialContext.Provider>
         </>
     );

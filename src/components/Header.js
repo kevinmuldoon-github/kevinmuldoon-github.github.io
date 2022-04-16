@@ -1,6 +1,7 @@
 import React from "react";
 import kevin from '../assets/bio-image.jpeg';
 
+
 const Header = () => {
 
 
@@ -12,7 +13,9 @@ const Header = () => {
             </div>
             <div>
                 <h1>The Portfolio of Kevin Muldoon</h1>
-                <h2>My sub header will go here</h2>
+                <p>Hello and welcome to my portfolio page. 
+                I am an experienced webmaster and internet marketer who has a 
+                passion for development. This page gives an overview of who I am and what I do.</p>
             </div>
 
         </div>

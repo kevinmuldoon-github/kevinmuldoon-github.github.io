@@ -9,10 +9,7 @@ body{
 
 header {
   background-color: #fff;
-  background-image: url('assets/laptop-graphic.png') ;
-  background-position: right; 
-  background-repeat: no-repeat; 
-  background-size:contain; 
+
   color:#48466D;
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -37,16 +34,26 @@ header h1 {
   text-transform: uppercase;
 }
 
-header h2 {
-  font-size: 1.5em;
+header p {
+  font-size: 1.2em;
   text-align:left;
 }
 
-/* Main Container Styling  */
+/* Styling the Main Area */
 
 #main-container {
+display:flex;
+flex-wrap:row;
+margin:20px;
+}
+
+#main-content-area {
   width:90%;
   background-color: #3D84A8;
+  /* background-image: url('assets/laptop-graphic.png') ; */
+  background-position: top right; 
+  background-repeat: no-repeat; 
+  background-size:cover; 
   margin:30px auto;
   border: 3px solid #ABEDD8;
   box-shadow: 5px 10px;
@@ -58,14 +65,14 @@ header h2 {
 #social-media-box {
   display:flex;
   flex-wrap: wrap;
+  flex-direction:column;
   justify-content: center;
-  border: 2px solid blue;
-  padding:0.8em;
-  background-color: #48466D;
+  padding:0.4em;
+
 }
 
 .social-media-item{
-  font-size:1.3em;
+  font-size:0.7em;
   background-color: #39579a;
   border: 2px solid #fff;
   border-radius: 15px;
@@ -96,8 +103,8 @@ footer a {
 color:#fff;
 text-decoration: none;
 text-transform: uppercase;
-margin:10px;
-padding:10px;
+margin:auto;
+padding:20px;
 }
 
 footer a:hover {
