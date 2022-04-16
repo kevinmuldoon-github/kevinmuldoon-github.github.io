@@ -35,7 +35,7 @@ header h1 {
 }
 
 header p {
-  font-size: 1.2em;
+  font-size: 1.25em;
   text-align:left;
 }
 
@@ -58,6 +58,27 @@ margin:20px;
   border: 3px solid #ABEDD8;
   box-shadow: 5px 10px;
   padding:1em;
+}
+
+.info {
+    padding:15px;
+    color:#fff;
+}
+
+.info h2 {
+  display:inline;
+}
+
+.info ul {
+  list-style-type:square;
+  /* display:inline; */
+}
+
+.info li {
+  display:inline;
+  margin-right:5px;
+  font-size:1.1em;
+  
 }
 
 /* Social Media Box */

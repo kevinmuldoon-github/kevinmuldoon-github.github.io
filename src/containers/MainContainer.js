@@ -2,7 +2,8 @@ import React, { useState, useEffect } from 'react';
 import * as rssParser from 'react-native-rss-parser';
 import Header from '../components/Header';
 import SocialContext from '../context/SocialContext';
-import SocialMediaBox from '../components/SocialMediaBox';
+import MainContentArea from '../components/MainContentArea';
+
 import Footer from '../components/Footer';
 
 
@@ -13,6 +14,11 @@ const [socialMedia, setSocialMedia] = useState ([
     name: 'website',
     url:'https://www.kevinmuldoon.com/',
     icon: 'fa-brands fa-wordpress'
+    },
+    {
+    name: 'email',
+    url:'https://www.kevinmuldoon.com/contact/',
+    icon: 'fa-solid fa-at'
     },
     {
         name: 'facebook',
@@ -63,20 +69,9 @@ const [blogRSSFeed, setBlogRSSFeed] = useState([]);
     return (
         <>
         <SocialContext.Provider value={{socialMedia}}>
-        <Header />
-        <div id="main-container">
-            <div><SocialMediaBox /></div>
-            <div id="main-content-area">
-                <p>This will be the main container</p>
-                <p>About Me</p>
-                <p>What I Do</p>
-                <p>Blog</p>
-                <p>YouTube</p>
-                <p></p>
-            </div>
-
-        </div>
-        <Footer />
+            <Header />
+            <MainContentArea />
+            <Footer />
         </SocialContext.Provider>
         </>
     );
