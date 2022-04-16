@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-import * as rssParser from 'react-native-rss-parser';
 import Header from '../components/Header';
 import SocialContext from '../context/SocialContext';
 import MainContentArea from '../components/MainContentArea';
+
 
 import Footer from '../components/Footer';
 
@@ -13,12 +13,12 @@ const [socialMedia, setSocialMedia] = useState ([
     {
     name: 'website',
     url:'https://www.kevinmuldoon.com/',
-    icon: 'fa-brands fa-wordpress'
+    icon: 'fa-solid fa-house'
     },
     {
     name: 'email',
     url:'https://www.kevinmuldoon.com/contact/',
-    icon: 'fa-solid fa-at'
+    icon: 'fa-brands fa-at'
     },
     {
         name: 'facebook',
@@ -55,15 +55,10 @@ const [blogRSSFeed, setBlogRSSFeed] = useState([]);
 //     getRSSFeed();
 // }, []);
 
-// const getRSSFeed = function (items=10) {
-    // fetch ('https://www.kevinmuldoon.com/feed/')
-//     fetch('http://www.nasa.gov/rss/dyn/breaking_news.rss')
+// const getRSSFeed = function () {
+//     fetch ('https://www.youtube.com/feeds/videos.xml?channel_id=UCUcokjNJXd8LVpBkRN0eqHA')
 //         .then (response => response.text())
-//     //     .then (posts => setBlogRSSFeed(posts.slice(0,items)))
-//     .then((responseData) => rssParser.parse(responseData))
-//     .then((rss) => {
-//     console.log(rss.title)
-//     console.log(rss.items.length) })
+//         .then (posts => setBlogRSSFeed(posts))
 // };
 
     return (

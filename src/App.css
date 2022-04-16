@@ -18,8 +18,9 @@ header {
 }
 
 #header-box {
+  
   display: flex;
-  width:90%;
+  width:80%;
   column-gap: 20px;
   padding:15px;
   margin:auto;
@@ -47,17 +48,28 @@ flex-wrap:row;
 margin:20px;
 }
 
+.left-column {
+  width:250px;
+}
+
 #main-content-area {
-  width:90%;
+  display:flex;
+  width:80%;
   background-color: #3D84A8;
-  /* background-image: url('assets/laptop-graphic.png') ; */
-  background-position: top right; 
-  background-repeat: no-repeat; 
-  background-size:cover; 
+  border-radius: 15px;
   margin:30px auto;
   border: 3px solid #ABEDD8;
   box-shadow: 5px 10px;
   padding:1em;
+}
+
+#main-content-area p {
+  color:#fff;
+}
+
+#main-content-area a {
+  color:rgb(39, 28, 136);
+  text-decoration: none;
 }
 
 .info {
@@ -86,10 +98,9 @@ margin:20px;
 #social-media-box {
   display:flex;
   flex-wrap: wrap;
-  flex-direction:column;
+  flex-direction:row;
   justify-content: center;
   padding:0.4em;
-
 }
 
 .social-media-item{
@@ -97,20 +108,25 @@ margin:20px;
   background-color: #39579a;
   border: 2px solid #fff;
   border-radius: 15px;
+  box-shadow: 3px 5px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  padding:1em;
-  margin:10px;
-}
+  padding:0.5em;
+  margin:5px;
 
+}
 .social-media-item a{
   color:#fff;
   text-decoration: none;
 }
 
+.fa-brands, .fa-solid {
+  font-size:2em;
+}
+
 .social-media-item a:hover {
-  color:#ffff00;
+  color:#4dc2e6;
 }
 
 /* Styling the Footer */
